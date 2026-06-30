@@ -1,0 +1,35 @@
+﻿<Window x:Class="资源字典.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:资源字典"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800" Style="{StaticResource MaterialDesignWindow}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ColorDic.xaml"/>
+                <ResourceDictionary Source="Resources/TextDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Label Content="错误标签" Style="{StaticResource small}" Background="{StaticResource errColor}"/>
+            <Label Content="警告标签" Style="{StaticResource small}" Background="{StaticResource warnColor}"/>
+            <Label Content="成功标签" Style="{StaticResource small}" Background="{StaticResource trueColor}"/>
+            <TextBox Height="50" Style="{StaticResource smallTextBox}"/>
+
+            <TextBlock Text="这是一个文本块" Style="{StaticResource MaterialDesignHeadlineMediumTextBlock}"/>
+            <Button Content="这是一个按钮" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
+            <ListBox Style="{StaticResource MaterialDesignToolToggleFlatListBox}">
+                <ListBoxItem Content="选项1"/>
+                <ListBoxItem Content="选项2"/>
+                <ListBoxItem Content="选项2"/>
+                <ListBoxItem Content="选项2"/>
+            </ListBox>
+
+        </StackPanel>
+    </Grid>
+</Window>
