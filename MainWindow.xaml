@@ -11,6 +11,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/ColorDic.xaml"/>
                 <ResourceDictionary Source="Resources/TextDic.xaml"/>
+                <ResourceDictionary Source="Resources/OpenBtuDic.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -20,6 +21,8 @@
             <Label Content="警告标签" Style="{StaticResource small}" Background="{StaticResource warnColor}"/>
             <Label Content="成功标签" Style="{StaticResource small}" Background="{StaticResource trueColor}"/>
             <TextBox Height="50" Style="{StaticResource smallTextBox}"/>
+            
+            <ToggleButton Style="{StaticResource SwitchButtonStyle}"/>
 
             <TextBlock Text="这是一个文本块" Style="{StaticResource MaterialDesignHeadlineMediumTextBlock}"/>
             <Button Content="这是一个按钮" Style="{StaticResource MaterialDesignFlatDarkBgButton}"/>
@@ -29,6 +32,15 @@
                 <ListBoxItem Content="选项2"/>
                 <ListBoxItem Content="选项2"/>
             </ListBox>
+
+            <ToggleButton Style="{StaticResource MaterialDesignActionDarkToggleButton}"/>
+            <Border BorderThickness="5" BorderBrush="Blue" CornerRadius="50" Background="LightGray" Width="100" Height="50">
+                 <ToggleButton Style="{StaticResource MaterialDesignToolButton}" />
+            </Border>
+
+
+            <ToggleButton Style="{StaticResource MaterialDesignOutlinedSecondaryLightButton}"/>
+            <ToggleButton Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
 
         </StackPanel>
     </Grid>
